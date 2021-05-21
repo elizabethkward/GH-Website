@@ -1,0 +1,371 @@
+body {
+  color: #404040;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  border: 0;
+  background: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+}
+
+.logo {
+  width: 200px;
+  padding-top: 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 55%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #0b5292;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+a.nav__linkdonate {
+  background: #0b5292;
+  padding: 12px 24px;
+  color: white;
+}
+
+.nav-links a:hover {
+  color: #57c1e8;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #0b5292;
+  margin: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    background: white;
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    padding: 0;
+  }
+
+  .open {
+    transform: translateX(0);
+  }
+  .burger {
+    display: block;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+.email_signup {
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  margin: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.form-input {
+  padding: 10px;
+}
+
+.email_signup-input {
+  font-family: inherit;
+}
+
+.signup_button {
+  background-color: #0b5292;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  box-shadow: none;
+  border: none;
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  margin-bottom: 16px;
+  margin: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.GenHealth,
+.Strategies,
+.StrategyList,
+.COVID19,
+.Mission {
+  max-width: 1000px;
+  margin: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+}
+
+.StrategyList {
+  padding-left: 32px;
+}
+
+.Mission {
+  color: #0b5292;
+}
+
+.LearnMore {
+  color: #0b5292;
+  margin: 16px;
+}
+
+/* .icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+} */
+
+.footer-container {
+  background-color: #f2f2f2;
+  padding-left: 16px;
+  padding-top: 16px;
+}
+
+.all-socials {
+  width: 30px;
+}
+
+@media (min-width: 500px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+  header {
+    grid-column-start: 1;
+    grid-column-end: 9;
+  }
+  .page_heading {
+    grid-column-start: 2;
+    grid-column-end: 8;
+  }
+  main {
+    grid-column-start: 1;
+    grid-column-end: 9;
+  }
+  .email_signup {
+    grid-column-start: 3;
+    grid-column-end: 7;
+  }
+  aside {
+    grid-column-start: 2;
+    grid-column-end: 8;
+  }
+
+  .mission {
+    grid-column-start: 2;
+    grid-column-end: 8;
+  }
+
+  .footer-container {
+    grid-column-start: 2;
+    grid-column-end: 8;
+  }
+
+  footer {
+    grid-column-start: 1;
+    grid-column-end: 9;
+  }
+}
+.icon-tile {
+  text-align: center;
+}
+.icon-tile img {
+  width: 35%;
+}
+.icons a {
+  text-decoration: none;
+  color: #404040;
+}
+.icons a:hover {
+  color: #57c1e8;
+}
+@media (min-width: 700px) {
+  .icons {
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 16px;
+  }
+  .icon-tile {
+    flex: 0 1 25%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 25%;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 16px;
+  }
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #404040;
+}
+
+.footer-links a:hover {
+  color: #0b5292;
+}
+
+.footer-container {
+  text-align: center;
+}
+
+.blog_post {
+  text-align: left;
+}
+
+.blog_post a {
+  text-decoration: none;
+  color: #0b5292;
+}
+
+.blog_post a:hover {
+  color: #57c1e8;
+}
+
+.sumb {
+  text-align: center;
+  color: #0b5292;
+}
+
+.sumb a {
+  text-decoration: none;
+  color: #0b5292;
+}
+
+.sumb a:hover {
+  color: #57c1e8;
+}
+
+.footer__btn {
+  background-color: #0b5292;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  box-shadow: none;
+  border: none;
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.all-socials {
+  vertical-align: center;
+}
+
+.image {
+  position: relative;
+}
+
+.home {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 100%;
+}
+
+.home span {
+  color: #0b5292;
+  text-shadow: 2px 2px 4px white;
+  font: bold 32px "Segoe UI", Helvetica, Sans-Serif;
+  padding: 32px;
+}
+.home span.spacer {
+  padding: 32px;
+}
+
+.fade-up {
+  animation: fadeUp 2s;
+  opacity: 1;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.home_description {
+  text-align: center;
+}
+
+.aside-container {
+  background-color: #f2f2f2;
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
